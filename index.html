@@ -12,7 +12,7 @@
     <div class="container">
       <h1>Sophia and Emily's Hair Salon</h1>
       <p>Please fill out the form below to book your appointment.</p>
-      <form>
+      <form id="content">
         <div class="form-group">
           <label for="name">First and Last Name:</label>
           <input id="name" class="form-control" type="text">
@@ -21,10 +21,10 @@
         <div class="form-group">
           <select class="form-control" id="service">
           <label for="service">Please select type of service:</label>
-          <option value="1">Cut</option>
-          <option value="2">Color</option>
-          <option value="3">Perm</option>
-          <option value="4">Blow Out</option>
+          <option value="Cut">Cut</option>
+          <option value="Color">Color</option>
+          <option value="Perm">Perm</option>
+          <option value="Blow Out">Blow Out</option>
           </select>
         </div>
 
@@ -36,16 +36,26 @@
         <div class="form-group">
           <select class="form-control" id="time">
           <label for="time">Please select appointment window:</label>
-          <option value="1">9AM - 11AM</option>
-          <option value="2">12PM - 1:30PM</option>
-          <option value="3">2PM - 3PM</option>
-          <option value="4">3PM - 5PM</option>
+          <option value="9AM - 11AM">9AM - 11AM</option>
+          <option value="12PM - 1:30PM">12PM - 1:30PM</option>
+          <option value="2PM - 3PM">2PM - 3PM</option>
+          <option value="3PM - 5PM">3PM - 5PM</option>
           </select>
       </div>
 
-      <button type="button" name="button">Book Appointment</button>
+      <button type="submit" name="button">Book Appointment</button>
 
       </form>
-    </div>
+
+
+      <div id="appointment">
+      <h1>Appointment Details</h1>
+          <p>Name: <span class="name"></span><br>
+            Service: <span class="service"></span><br>
+            Date: <span class="date"></span><br>
+            Time: <span class="time"></span></p>
+
+      </div>
+  </div>
   </body>
 </html>
